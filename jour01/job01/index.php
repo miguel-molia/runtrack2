@@ -15,7 +15,7 @@
     echo $str2 . " " . $str . " " . $str3;
     echo "<br>";
     echo $val;
-    $myBool = true;
+    $myBool = false;
     echo "<br>";
     echo $myBool;
    
