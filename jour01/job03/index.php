@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,26 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <?php
-     $str2 = "Vive";
-     $str = "LaPlateforme";
-     $str3 = "!";
-    $val = "6" + "4";
-    echo $str2 . " " . $str . " " . $str3;
-    echo "<br>";
-    echo $val;
-    $myBool = true;
-    echo $myBool;
-   
-    
-    
-    
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+</table>
+
+
 
 
     
-    
-    
-    ?>
 </body>
 </html>
