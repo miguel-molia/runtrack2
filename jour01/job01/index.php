@@ -13,15 +13,15 @@
      $str3 = "!";
     $val = "6" + "4";
     echo $str2 . " " . $str . " " . $str3;
+    echo "<br>";
     echo $val;
-    $myBool= true;
-    echo "<br>";
-    echo "<br>";
+    $myBool = true;
     echo $myBool;
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
+   
+    
+    
+    
+
 
     
     
