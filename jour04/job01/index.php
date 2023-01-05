@@ -4,7 +4,7 @@
 
     ?>
 
-<form method="get" action="">
+<form method="get">
     
     <input type="text">
     
