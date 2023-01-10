@@ -13,9 +13,9 @@
 <?php 
 
     $myname = "Miguel";
-    $myage = "31";
-    $myrecord = "18.4";
-    $isCorrect = "true";
+    $myage = 31;
+    $myrecord = 18.4;
+    $isCorrect = true;
 
 
 ?>
@@ -29,29 +29,26 @@
             <th>Valeur</th>
         </tr>
         <tr>
-            <td>Boolean</td>
-            <td>Bool</td>
-            <td>True</td>
+            <td> String</td>
+            <td> $myname </td>
+            <td> <?= $myname?> </td>
         </tr>
         <tr>
-            <td>Entier</td>
-            <td>Int</td>
-            <td>24</td>
+            <td> Int </td>
+            <td> $myage</td>
+            <td> <?= $myage?> </td>
         </tr>
         <tr>
-            <td>Chaines de caracteres</td>
-            <td>String</td>
-            <td>Je suis en formation</td>
+            <td> Float</td>
+            <td> $myrecord </td>
+            <td> <?= $myrecord?> </td>
         </tr>
         <tr>
-            <td>Nombre a virgule flottante</td>
-            <td>Float</td>
-            <td>4.21</td>
+            <td> Bool</td>
+            <td> $isCorrect </td>
+            <td> <?= $isCorrect?> </td>
         </tr>
-    
 </table>
-
-
 
 
 
