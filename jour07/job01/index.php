@@ -3,7 +3,7 @@
 function hello ()
 
 {
-    echo "Hello LaPlateforme!.";
+    echo "Hello LaPlateforme!";
 }
 
 
