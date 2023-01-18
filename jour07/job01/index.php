@@ -1,14 +1,12 @@
 <?php
 
-function hello ()
+function hello()
 
 {
     echo "Hello LaPlateforme!";
 }
 
-
 hello();
-
 
 
 ?>

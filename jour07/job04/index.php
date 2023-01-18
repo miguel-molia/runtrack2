@@ -8,22 +8,22 @@ function calcule($a, $operation, $b)
         return $a + $b;  
     }
 
-    if ($operation == "-")
+    elseif ($operation == "-")
     {
         return $a - $b;
     }
 
-    if ($operation == "*")
+    elseif ($operation == "*")
     {
         return $a * $b;
     }
 
-    if ($operation == "/")
+    elseif ($operation == "/")
     {
         return $a / $b;
     }
 
-    if ($operation == "%")
+    elseif ($operation == "%")
     {
         return $a % $b;
     }
@@ -44,11 +44,6 @@ function calcule($a, $operation, $b)
 
     $t = calcule(4, "%", 2);
     echo $t;
-
-
-
-
-
 
 
 ?>
