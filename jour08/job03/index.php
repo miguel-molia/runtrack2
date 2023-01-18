@@ -1,31 +1,40 @@
+<body>
+    <?php
 
-<?php
+    session_start();
 
-session_start();
+    if (!isset($_SESSION['name'])) 
+    {
+        $_SESSION['name'] = [];
+    }
 
+    if (isset($_POST['reset'])) 
+    {
+        $_SESSION['name'] = [];
+        $_POST['reset'] = '';
+    }
 
-if (isset($_GET["prenom"]))
-{
-    $_SESSION["prenom"] = $_GET["prenom"];
+    if (
+        isset($_POST['prenom']) && $_POST['prenom'] != '' && $_POST['prenom'] !== end($_SESSION['name']))
+         {
+        array_push($_SESSION['name'], $_POST['prenom']);
+    }
 
-    
-    echo $_GET["prenom"];
-   
-}
-// if ($_GET["count"] == $_SESSION["reset"]){
-//     session_destroy();
+    ?>
+    <form action="" method="post">
+        <input type="text" name="prenom" id="">
+        <input type="submit">
+        <input type="submit" name="reset" value="Reset">
+    </form>
 
-// }
-?>
-
-<form>
-
-<input type="text" name="prenom">
-<input type="submit">
-<input type="submit" name="count" value="reset">
-
-</form>
-
+    <div>
+        <ul>
+            <?php
+            foreach ($_SESSION['name'] as $key => $val) {
+                echo "<li>.$val.</li>";
+            } ?>
+    </div>
+</body>
 
 
 
